@@ -10,6 +10,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from flask import Flask, render_template, request
                         #render_template helps to redirect to the first page
 
+
 unmaped_dict = {1: 'very_negative', 2: 'negative', 3: 'neutral', 4: 'positive', 5: 'very_positive'}
 
 app = Flask(__name__)
