@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+            .container {
+                max-width: 960px;
+            }
+            .upload-box {
+                margin-top: 50px;
+                padding: 30px;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                background-color: #fff;
+            }
+            .upload-box h1 {
+                margin: 0 0 10px;
+                font-size: 24px;
+                font-weight: bold;
+                color: #6c757d;
+            }
+            .upload-box .form-group {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="upload-box text-center">
+                <h1>Meme Prediction</h1>
+                <form action="/" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" name="imagefile">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
